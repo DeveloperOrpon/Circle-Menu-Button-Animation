@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ramotion.circlemenu.CircleMenuView
+        android:id="@+id/circle_menuid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:button_colors="@array/colors"
+        app:button_icons="@array/icons"/>
+
+    <com.akki.circlemenu.CircleMenu
+        android:id="@+id/CircleMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:menu_background_color="@array/colors"
+        app:menu_close_duration="300"
+        app:menu_icons="@array/icons"
+        app:menu_open_duration="400"
+        app:menu_orientation="half_circle"
+        app:menu_radius="80dp" />
+    <com.akki.circlemenu.CircleMenu
+        android:id="@+id/circle_menu2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu_background_color="@array/colors"
+        app:menu_close_duration="300"
+        app:menu_icons="@array/icons"
+        app:menu_open_duration="400"
+        app:menu_orientation="arc_right"
+        app:menu_radius="150dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
